@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use Illuminate\Foundation\Testing\TestResponse;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -14,6 +15,7 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
+        /** @var TestResponse $response */
         $response = $this->get('/');
 
         $response->assertStatus(200);
