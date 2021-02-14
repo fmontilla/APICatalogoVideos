@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 # Método específico em um arquivo - vendor/bin/phpunit --filter testIfUseTraits tests/Unit/CategoryTest.php
 # Método específico em uma classe - vendor/bin/phpunit --filter CategoryTest::testIfUseTraits
 
-class CategoryTest extends TestCase
+class CategoryUnitTest extends TestCase
 {
     private $category;
 
@@ -52,7 +52,7 @@ class CategoryTest extends TestCase
         $this->assertEquals($casts, $this->category->getCasts());
     }
 
-    public function testIncrementing()
+    public function testIncrementingAttribute()
     {
         $this->assertFalse($this->category->incrementing);
     }
