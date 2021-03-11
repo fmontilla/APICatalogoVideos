@@ -53,8 +53,8 @@ class Genre extends Model
         return $this->belongsToMany(Category::class)->withTrashed();
     }
 
-//    public function videos()
-//    {
-//        return $this->belongsToMany(Video::class);
-//    }
+    public function videos()
+    {
+        return $this->belongsToMany(Video::class);
+    }
 }
