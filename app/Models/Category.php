@@ -48,4 +48,14 @@ class Category extends Model
     protected $dates = ['deleted_at'];
 
     public $incrementing = false;
+
+    public function genres()
+    {
+        return $this->belongsToMany(Genre::class);
+    }
+
+    public function videos()
+    {
+        return $this->belongsToMany(Video::class);
+    }
 }
