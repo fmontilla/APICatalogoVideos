@@ -29,6 +29,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Query\Builder|Category withTrashed()
  * @method static \Illuminate\Database\Query\Builder|Category withoutTrashed()
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Genre[] $genres
+ * @property-read int|null $genres_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Video[] $videos
+ * @property-read int|null $videos_count
  */
 class Category extends Model
 {
