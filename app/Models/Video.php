@@ -43,6 +43,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Query\Builder|Video withTrashed()
  * @method static \Illuminate\Database\Query\Builder|Video withoutTrashed()
  * @mixin \Eloquent
+ * @property string|null $thumb_file
+ * @method static \Illuminate\Database\Eloquent\Builder|Video whereThumbFile($value)
  */
 class Video extends Model
 {
